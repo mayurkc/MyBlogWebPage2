@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tophead{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(10, 43, 40);
+    display: flex;
+    justify-content: space-between;
+    border: 2px solide red;
+    padding: 0px 100px;
+    color: white;
+
+}
+.tophead ul li{
+    display: inline;
+}
+.tophead ul li a{
+    text-decoration: none;
+    color: rgb(115, 232, 123);
+    padding-left:10px ;
+
+}
+header{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: rgb(24, 91, 63);
+    padding: 0px 100px;
+    color: white;
+
+}
+header h1, h3{
+    display: flex;
+    display: inline;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    background-color: rgb(142, 193, 172);
+    padding: 0px 100px;
+
+
+}
+
+nav ul li {
+    display: inline;
+
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(12, 10, 10);
+    padding-right:10px ;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    font-size: 20px;
+    transition: 0.3 linear;
+}
+section{
+    width: 100%;
+    padding: 0px 100px;
+
+}
+section main{
+    float:left;
+    width: 63%;
+    margin-left: 100px;
+    padding-top: 10px;
+    
+
+}
+section aside{
+    float: right;
+    width: 20%;
+    padding-top: 20px;
+    background-color: #ded7d7;
+
+}
+.div{
+    clear: both;
+}
+.para{
+    padding-left: 45px;
+}
+footer{
+    left:0;
+    bottom:0;
+    right:0;
+    box-sizing: border-box;
+}
+footer{
+    width: 100%;
+    padding: 0px 100px;
+
+    height: 130px;
+    line-height: 21px;
+    background-color: rgb(16, 58, 40);
+    color: white;
+    bottom: 0%;
+    display: flex;
+
+
+}
+.link
+{
+float: left;
+width: 680px;
+padding-left: 100px;
+text-decoration: none;
+
+}
+
+.follow
+{
+width: 450px;
+margin-left: 70px;
+text-decoration: none;
+}
+.follow li,.link li, .copy li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+
+}
+.follow h4,.link h4, .copy h4 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(61, 171, 135);
+
+}
+
+.copy
+{
+float: right;
+width: 250px;
+padding-right: 100px;
+}
+
+@media screen and (max-width:991px ) {
+    .tophead{
+        height: auto;
+        padding: 0px;
+    }
+    .tophead ul li{
+        display: block;
+    }
+
+    header, nav{
+        
+        text-align: center;
+        padding: 10px;
+    }
+    section{
+        padding: 0px 0px 0px 10px;
+    }
+}
+@media screen and(max-width:767px ) {
+
+    section main, section aside{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding: 0px;
+
+    }
+}
+@media screen and(max-width:575px ) {
+    
+    section main, section aside{
+        float: none;
+        width: 100%;
+        height: auto;
+
+    }
+    header
+    {
+    line-height: none; 
+    }
+    header h1,h3
+    {
+        display: block;
+    }
+}
